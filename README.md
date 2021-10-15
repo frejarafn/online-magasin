@@ -1,3 +1,3 @@
-# HTML Boilerplate
+# HTML Boilerplate 
 
-Kopier filerne i denne mappe til dine projekter. Det giver en nem start, hvor strukturen med HTML og CSS er på plads fra begyndelsen.
+En boilerplate er brugt til at komme godt fra start! Og det er så blevet til et online magasin!
