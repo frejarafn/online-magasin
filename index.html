@@ -4,14 +4,16 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>HTML Boilerplate</title>
-	<meta name="author" content="Your Name">
-	<meta name="description" content="Example description">
+	<title>Hobby hunter</title>
+	<meta name="author" content="Freja Rafn van Gilst">
+	<meta name="description" content="Et online magasin omhandelende livsstil og hobbyer">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="Hobbyside, inspiration, magasin, online magasin, hobby, oplevelser, livsstil, madlavning">
 	<link rel="stylesheet" href="css/style.css">
 
 	<!-- favicon = ikon i faneblad / browser -->
-	<link rel="icon" type="image/x-icon" href="images/smiley_32x32.png" />
+	<link rel="icon" type="image/x-icon" href="images/logo.png" />
+	<script src="https://kit.fontawesome.com/abc6878d39.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -19,44 +21,71 @@
 	<!-- "Wrapperen" holder sammen på dit design, fx hvis det skal centreres eller lign. -->
 	<div id="wrap">
 
-		<!-- Emmet tip: nav>ul>li{Menu $}*3 -->
-		<nav>
-			<!-- Menuer laves som regel i form af uordnede lister.
-					 Listerne kan styles så de går vandret eller lodret -->
-			<ul>
-				<li><a href="#"> Menu 1 </a></li>
-				<li>Menu 2</li>
-				<li>Menu 3</li>
-			</ul>
 
-		</nav>
 
 		<header>
 			<!-- site navn plus evt tagline og logo -->
 
 			<!-- ofte reserveres h1 til site-navn -->
-			<h1> Websidens Navn </h1>
+
+			<!-- Emmet tip: nav>ul>li{Menu $}*3 -->
+			<nav>
+				<!-- Menuer laves som regel i form af uordnede lister.
+						 Listerne kan styles så de går vandret eller lodret -->
+						 <a href="index.html">
+						  <img src="images/logo.png" alt="logo" width="100">
+						 </a>
+					<div><a href="#"> Hobbyer </a></div>
+					<div><a href="#">Madlavning</a></div>
+					<div><a href="#">Oplevelser</a></div>
+					<div><a href="#">Livsstil</a></div>
+
+					<div class="soeg">
+						<label for="toggle">
+							<i class="fas fa-search"></i>
+						</label>
+						<input type="checkbox" id="toggle">
+						<div class="pop">
+							<input type="search">
+						</div>
+					</div>
+			</nav>
 		</header>
 
 		<!-- indhold -->
 		<main>
+			<h1 class="forsideheader">Populære indlæg</h1>
 			<!-- modul for en sektion -->
-			<section id="aaa">
+			<section class="forside">
 				<article>
-					<h2> h2 </h2>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam laboriosam facilis incidunt fuga doloribus unde labore quae magni ipsam deserunt odit, quidem est possimus omnis nisi ad nostrum vitae necessitatibus?
-					</p>
+					<a href="strik.html">
+					<img src="images/sweater.png" alt="sweaters" class="forsidebilleder">
+					<h2> Strik dig glad </h2>
+					<div>
+				Det er ikke nogen hemmelighed at strik igen er blevet yderst populært hen over de seneste par år. Især efter corona er mange nye strikkere kommet til og har opdaget, hvor hyggeligt det er at sidde med sit strikketøj...
+			</div>
+					</a>
 				</article>
-			</section>
 
-			<!-- modul: en ny sektion -->
-			<section id="bbb">
 				<article>
-					<h2> h2 </h2>
-					<p>
+					<a href="tur.html">
+					<img src="images/so.png" alt="strik" class="forsidebilleder">
+					<h2> Gåture i det fri </h2>
+					<div>
+						Er dit hoved fyldt med tanker og har du svært ved at finde ro? Tankerne kan hurtigt samle sig i en hverdag, hvor der både skal være plads til studie, venner, pauser og alt for meget andet...
+					</div>
+				</a>
+
+				</article>
+
+				<article>
+					<a href="mad.html">
+					<img src="images/so.png" alt="strik" class="forsidebilleder">
+					<h2> Madplanlægning </h2>
+					<div>
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam laboriosam facilis incidunt fuga doloribus unde labore quae magni ipsam deserunt odit, quidem est possimus omnis nisi ad nostrum vitae necessitatibus?
-					</p>
+					</div>
+				</a>
 
 				</article>
 			</section>
@@ -64,7 +93,22 @@
 
 		<!-- typisk kontaktinformationer -->
 		<footer>
-			&copy; Footer informationer her ..., 2021
+			<div>
+				<strong>Kontakt</strong><br/>
+				Email: hobbyhunter@gmail.com<br/>
+				Tlf: 12 34 56 78
+			</div>
+
+<div>
+	<a href="index.html">
+	<img class="footerlogo" src="images/logo.png" alt="logo">
+	</a>
+</div>
+
+			<div>
+				<i class="fab fa-facebook"></i>
+				<i class="fab fa-instagram"></i>
+			</div>
 		</footer>
 
 	</div><!-- /wrap -->
