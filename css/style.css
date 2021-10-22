@@ -9,6 +9,7 @@
 
 }
 
+
 header {
   /* position:absolute;
   top:0;
@@ -75,25 +76,29 @@ nav {
 footer{
   background-color: var(--tema);
   padding: 1em;
-  /* position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0; */
   display: flex;
   justify-content: space-between;
 }
 
-footer div:nth-child(3) {
-  font-size: 3rem;
+footer div {
+  flex: 1;
 }
 
+footer div:nth-child(2) {
+  text-align: center;
+}
+
+footer div:nth-child(3) {
+  font-size: 3rem;
+  text-align: right;
+}
 
 /* Her bruges en variabel: --blue */
 body {
   margin:0;
   padding: 0;
   background-color: var(--white);
-  font-family: termina;
+  font-family: termina, sans-serif;
   font-weight: 200;
 }
 
