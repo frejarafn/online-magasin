@@ -1,7 +1,7 @@
 /**
  * fil: css/style.css
  **/
-/* Variabler: genbruges og gør designvalg enkle */
+
 :root {
   /* farver */
   --tema: #c4a68f;
@@ -9,13 +9,16 @@
 
 }
 
+html, body, #wrap {
+  height: 100%;
+}
+
+#wrap {
+  display: flex;
+  flex-direction: column;
+}
 
 header {
-  /* position:absolute;
-  top:0;
-  /*width: 100%;
-  left: 0;
-  right:0; */
   text-align: center;
   background-color: var(--tema);
   padding-right: 1em;
@@ -93,7 +96,7 @@ footer div:nth-child(3) {
   text-align: right;
 }
 
-/* Her bruges en variabel: --blue */
+
 body {
   margin:0;
   padding: 0;
@@ -152,8 +155,9 @@ main h1:before {
 main {
   padding-left: 1em;
   padding-right:1em;
+  flex-grow: 10;
 }
-/* Layout */
+
 a:link {
 color: black;
 text-decoration: none;
